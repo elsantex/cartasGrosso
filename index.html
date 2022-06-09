@@ -5,44 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Inicio</title>
 </head>
 
 <body>
 
-    <div id="grilla">
+  
 
-        <header>
-            <nav>
-                <div class="separado">
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="./img/MTG_Arena_Logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
 
-                    <article class="logo ">
-                        <a href="index.html">
-                           <img src="./img/MTG_Arena_Logo.png" alt="logo"  >
-                           </a>
-                       </article>
-                    <ul class="links">
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/reglas.html">Reglas</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/comprar.html">Donde Comprar</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/noticias.html">Noticias</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/contacto.html">Contacto</a>
-                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./secciones/reglas.html">Reglas</a>
+                      </li>
 
+                      
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Noticias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="./secciones/noticiaUno.html">Noticia 1</a></li>
+                          <li><a class="dropdown-item" href="./secciones/noticiaDos.html">Noticia 2</a></li>
+                          <li><a class="dropdown-item" href="./secciones/noticiaTres.html">Noticia 3</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./secciones/comprar.html">Donde Comprar</a>
+                      </li>  
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./secciones/contacto.html">Contacto</a>
+                      </li>
 
                     </ul>
+
+                  </div>
                 </div>
-            </nav>
+              </nav>
 
 
         </header>
@@ -51,12 +66,19 @@
 
             <h1 id="top">Bienvenidos!</h1>
 
-            <figure class="base">
 
-                <img class="expas" src="./img/xd.png" alt="cartas">
-                <figcaption>Ultimas expansiones</figcaption>
-                <img class="expas" src="./img/xd2.png" alt="cartasDos">
-            </figure>
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="expas" src="./img/xd.png" alt="cartas">
+                </div>
+                <div class="col-lg-2 ">
+                    <figcaption>Ultimas expansiones</figcaption>
+                </div>
+                <div class="col-lg-5">
+                    <img class="expas" src="./img/xd2.png" alt="cartasDos">
+                </div>
+              </div>
+            </div>
 
 
 
@@ -68,15 +90,15 @@
 
                     <h2>Nombre de noticia 1</h2> 
 
-                    <p>Resumen de noticia 1... <a href="./secciones/noticias.html">Leer Mas</a></p>
+                    <p>Resumen de noticia 1... <a href="./secciones/noticiaUno.html">Leer Mas</a></p>
 
                     <h2>Nombre de noticia 2</h2>
 
-                    <p>Resumen de noticia 2... <a href="./secciones/noticias.html">Leer Mas</a></p>
+                    <p>Resumen de noticia 2... <a href="./secciones/noticiaDos.html">Leer Mas</a></p>
 
                     <h2>Nombre de noticia 3</h2>
 
-                    <p>Resumen de noticia 3... <a href="./secciones/noticias.html">Leer Mas</a></p>
+                    <p>Resumen de noticia 3... <a href="./secciones/noticiaTres.html">Leer Mas</a></p>
 
                 </section>
                 <section id="aside">
@@ -98,8 +120,14 @@
 
         </footer>
 
-    </div>
+ 
 
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
