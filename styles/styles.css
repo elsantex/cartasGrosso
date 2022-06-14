@@ -68,13 +68,13 @@ footer{
         color: red;
         text-decoration: underline;
     }
-
+    h3{
+        padding: 0% 0% 0% 17%;
+    }
 
 }
 
-@media (min-width:500px){
-    
-}
+
 
 @media (min-width:768px){
 
@@ -86,24 +86,14 @@ footer{
     border-style: solid;
     }
 
+ .expas{
+    width:27vw;
+    margin: 1% 0% 0.5% 37%;
+    border: 5px crimson inset ;
+    
+}
  
 
-.expas{
-    margin: 1% 0% 0.5% 19%;
-    border: 5px crimson inset ;
-    transition-property: all ;
-    transition-duration: 2s;
-}
-
-.expas{
-    width: 22vw;
-}
-
-.expas:hover{
-    transform: scale(2);
-     
-    border: 0;
-}
 
 .torneo{
     width: 85vw;
@@ -154,7 +144,31 @@ h3{
 figcaption{
     display: flex;
     font-size: 25px;
-    padding: 40% 0% 0% 0%;
+    padding: 1% 0% 1% 39%;
 }
 
+}
+
+@media (min-width:992px){
+
+    figcaption{
+        padding: 45% 0% 0% 25%;
+    }
+
+    .expas{
+        width: 25vw;
+    }
+
+    .expas{
+        margin: 1% 0% 0.5% 19%;
+        border: 5px crimson inset ;
+        transition-property: all ;
+        transition-duration: 2s;
+    }
+    
+    .expas:hover{
+        transform: scale(2);
+         
+        border: 0;
+    }
 }
