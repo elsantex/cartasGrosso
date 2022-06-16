@@ -1,0 +1,180 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  max-width: 100%;
+  overflow-x: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 1em;
+}
+
+main {
+  background-color: aquamarine;
+}
+
+body {
+  background-image: url("../img/fondo.jpg");
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  padding: 1% 0% 1% 30%;
+  margin: 0% 0% 1% 0%;
+  text-decoration: underline;
+}
+
+h2 {
+  color: rgb(187, 65, 187);
+  font-weight: bolder;
+  font-size: 32px;
+  padding: 1% 0% 0% 1%;
+  font-family: "Poppins", sans-serif;
+}
+
+.subtitulos {
+  font-size: 64px;
+  padding: 1% 0% 1% 3%;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: black;
+  padding: 1% 0% 1% 2%;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background-color: burlywood;
+  padding: 1% 1% 5% 1%;
+}
+
+@media (min-width: 300px) {
+  h1 {
+    padding-left: 29%;
+    padding-top: 10%;
+  }
+
+  figcaption {
+    display: flex;
+    font-size: 24px;
+    padding: 0% 0% 4% 17%;
+    color: red;
+    text-decoration: underline;
+  }
+
+  .carousel {
+    margin-left: 25%;
+  }
+
+  h3 {
+    padding: 0% 0% 0% 19%;
+  }
+
+  .ordenar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+  }
+}
+@media (min-width: 500px) {
+  h1 {
+    padding-left: 40%;
+  }
+
+  h3 {
+    padding-left: 28%;
+  }
+
+  .ordenar {
+    flex-direction: row;
+    padding-left: 0%;
+  }
+}
+@media (min-width: 768px) {
+  .logo {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    padding: 1% 0% 1% 40%;
+    margin: 0% 0% 1% 0%;
+  }
+
+  h3 {
+    padding: 0% 0% 0% 30%;
+  }
+
+  .expas {
+    width: 27vw;
+    margin: 1% 0% 0.5% 37%;
+  }
+
+  .torneo {
+    width: 85vw;
+    margin-left: 7.5%;
+  }
+
+  form {
+    margin: 1%;
+  }
+
+  .pieNoticia {
+    padding: 0% 0% 1% 45%;
+  }
+
+  .externo {
+    padding: 0% 0% 1% 2%;
+  }
+
+  .leerReglas {
+    padding: 0% 0% 2% 2%;
+  }
+
+  .tojunto {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .separado {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  figcaption {
+    display: flex;
+    font-size: 25px;
+    padding: 1% 0% 1% 39%;
+  }
+}
+@media (min-width: 992px) {
+  h3 {
+    padding-left: 37%;
+  }
+
+  figcaption {
+    padding: 45% 0% 0% 25%;
+  }
+
+  .expas {
+    width: 25vw;
+    margin: 1% 0% 0.5% 19%;
+    transition-property: all;
+    transition-duration: 2s;
+  }
+  .expas:hover {
+    transform: scale(2);
+  }
+
+  .ordenar {
+    padding-left: 15%;
+  }
+}/*# sourceMappingURL=estilos.css.map */

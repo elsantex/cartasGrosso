@@ -1,35 +1,23 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    max-width: 100%;
-    overflow-x: none;
-}
+@import "variables";
+@import "generales";
 
-html{
-    font-size: 62.5%;
-    font-size: 1em;
-}
 
-main{
-    background-color: aquamarine;
-}
 
-body{
-    background-image: url("../img/fondo.jpg");
-}
+
 
 h1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $mon;
 padding: 1% 0% 1% 30%;
 margin: 0% 0% 1% 0%;
 text-decoration: underline;
 }
 
 h2{
-    color: rgb(187, 65, 187);
+    color: $rosa;
     font-weight: bolder;
     font-size: 32px;
     padding: 1% 0% 0% 1%;
+    font-family: $pop;
 }
 
 .subtitulos{
@@ -38,22 +26,19 @@ h2{
     text-decoration: underline;
 }
 
-h2{
-    font-family: 'Poppins', sans-serif;
-}
 
 h3{
-    font-family: 'Poppins', sans-serif;
+    font-family: $pop;
 }
 
 p{
-    color: black;
+    color: $n;
     padding: 1% 0% 1% 2%;
-    font-family: 'Poppins', sans-serif;
+    font-family: $pop;
 }
 
 footer{
-    background-color: burlywood;
+    background-color: $madera;
     padding: 1% 1% 5% 1%;
 }
 
@@ -68,7 +53,7 @@ footer{
         display: flex;
         font-size: 24px;
         padding: 0% 0% 4% 17%;
-        color: red;
+        color: $r;
         text-decoration: underline;
 }
 
@@ -107,9 +92,13 @@ footer{
 }
 
 @media (min-width:768px){
+ .logo{
+        margin: 0%;
+        padding: 0%;
+    }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $mon;
     padding: 1% 0% 1% 40%;
     margin: 0% 0% 1% 0%;
 }
@@ -154,11 +143,6 @@ form{
     grid-template-columns: 50% 50%;
 }
 
-.logo{
-    margin: 0%;
-    padding: 0%;
-}
-
 figcaption{
     display: flex;
     font-size: 25px;
@@ -178,18 +162,15 @@ figcaption{
     }
 
     .expas{
-        width: 25vw;
-    }
-
-    .expas{
+         width: 25vw;
         margin: 1% 0% 0.5% 19%;
         transition-property: all ;
         transition-duration: 2s;
-    }
     
-    .expas:hover{
+        &:hover{
         transform: scale(2);
     }
+}
 
   .ordenar{
     padding-left: 15%;
