@@ -10,24 +10,20 @@ html{
     font-size: 1em;
 }
 
-
 main{
     background-color: aquamarine;
 }
-
 
 body{
     background-image: url("../img/fondo.jpg");
 }
 
-
 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 padding: 1% 0% 1% 30%;
 margin: 0% 0% 1% 0%;
-border-style: solid;
+text-decoration: underline;
 }
-
 
 h2{
     color: rgb(187, 65, 187);
@@ -36,30 +32,37 @@ h2{
     padding: 1% 0% 0% 1%;
 }
 
-
 .subtitulos{
     font-size: 64px;
     padding: 1% 0% 1% 3%;
-    border: 5px solid black;
+    text-decoration: underline;
 }
 
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+}
 
 p{
     color: black;
     padding: 1% 0% 1% 2%;
-    border: 5px  ;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 footer{
     background-color: burlywood;
     padding: 1% 1% 5% 1%;
-
 }
 
-
 @media (min-width:300px){
+
+    h1{
+        padding-left: 29%;
+        padding-top: 10%;
+    }
 
     figcaption{
         display: flex;
@@ -67,49 +70,66 @@ footer{
         padding: 0% 0% 4% 17%;
         color: red;
         text-decoration: underline;
-    }
+}
+
+.carousel{
+            margin-left: 25%;
+        }
+
     h3{
-        padding: 0% 0% 0% 17%;
+        padding: 0% 0% 0% 19%;
+    }
+
+    .ordenar{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+    padding-left: 15%;
+}
+
+}
+
+@media (min-width:500px){
+    
+ h1{
+    padding-left: 40%;
+ }
+
+    h3{
+        padding-left: 28%;
+    }
+
+    .ordenar{
+        flex-direction: row;
+        padding-left: 0%;
     }
 
 }
 
-
-
 @media (min-width:768px){
 
-
-    h1{
-        font-family: Arial, Helvetica, sans-serif;
+h1{
+    font-family: 'Montserrat', sans-serif;
     padding: 1% 0% 1% 40%;
     margin: 0% 0% 1% 0%;
-    border-style: solid;
-    }
+}
+
+h3{
+    padding: 0% 0% 0% 30%;
+}
 
  .expas{
     width:27vw;
     margin: 1% 0% 0.5% 37%;
-    border: 5px crimson inset ;
-    
 }
- 
-
 
 .torneo{
     width: 85vw;
     margin-left: 7.5%;
 }
 
-
-
-
 form{
     margin: 1%;
-}
-
-
-h3{
-    padding: 0% 0% 0% 30%;
 }
 
 .pieNoticia{
@@ -123,8 +143,6 @@ h3{
 .leerReglas{
     padding: 0% 0% 2% 2% ;
 }
-
-
 
 .tojunto{
     display: grid;
@@ -151,6 +169,10 @@ figcaption{
 
 @media (min-width:992px){
 
+ h3{
+    padding-left: 37%;
+  }
+
     figcaption{
         padding: 45% 0% 0% 25%;
     }
@@ -161,14 +183,17 @@ figcaption{
 
     .expas{
         margin: 1% 0% 0.5% 19%;
-        border: 5px crimson inset ;
         transition-property: all ;
         transition-duration: 2s;
     }
     
     .expas:hover{
         transform: scale(2);
-         
-        border: 0;
     }
+
+  .ordenar{
+    padding-left: 15%;
+  }
+
 }
+
