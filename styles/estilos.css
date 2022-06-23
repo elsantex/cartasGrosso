@@ -18,6 +18,43 @@ body {
   background-image: url("../img/fondo.jpg");
 }
 
+/*solo para actividad sass II(me sirve que quede el commit asi puedo reverlo en cualquier momento)*/
+.btn--twitter {
+  background-color: #55acee;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--instagram {
+  background-color: #c25e30;
+}
+
+.extend--uno, .extend--tres, .extend--dos {
+  border: 5px inset crimson;
+  background-color: burlywood;
+}
+
+.extend--dos {
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  color: red;
+}
+
+.extend--tres {
+  font-size: 25px;
+  color: black;
+  border: 10px outset blueviolet;
+}
+
+.mixin {
+  height: 120px;
+  width: 300px;
+  background-color: azure;
+}
+
+/*solo para actividad sass II(me sirve que quede el commit asi puedo reverlo en cualquier momento)*/
 h1 {
   font-family: "Montserrat", sans-serif;
   padding: 1% 0% 1% 30%;
@@ -39,6 +76,10 @@ h2 {
   text-decoration: underline;
 }
 
+form {
+  padding-bottom: 3%;
+}
+
 h3 {
   font-family: "Poppins", sans-serif;
 }
@@ -50,8 +91,20 @@ p {
 }
 
 footer {
-  background-color: burlywood;
-  padding: 1% 1% 5% 1%;
+  background-color: rgb(35, 34, 34);
+  padding: 1% 1% 0% 1%;
+}
+footer .pie {
+  color: white;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.derechos {
+  color: white;
 }
 
 @media (min-width: 300px) {
@@ -81,6 +134,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding-left: 15%;
+    padding-bottom: 2%;
   }
 }
 @media (min-width: 500px) {
@@ -107,6 +161,10 @@ footer {
     font-family: "Montserrat", sans-serif;
     padding: 1% 0% 1% 40%;
     margin: 0% 0% 1% 0%;
+  }
+
+  .resumen {
+    width: 100%;
   }
 
   h3 {
@@ -156,6 +214,10 @@ footer {
   }
 }
 @media (min-width: 992px) {
+  .resumen {
+    width: 90%;
+  }
+
   h3 {
     padding-left: 37%;
   }

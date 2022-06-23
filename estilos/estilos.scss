@@ -1,9 +1,53 @@
+@import "operaciones";
 @import "variables";
 @import "generales";
 
 
 
+/*solo para actividad sass II(me sirve que quede el commit asi puedo reverlo en cualquier momento)*/
 
+$redes: (
+        twitter: #55acee,
+        facebook: #3a5795,
+        instagram: #c25e30,
+
+);
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+    
+}
+
+.extend--uno{
+    border:5px inset crimson ;
+    background-color: $madera
+}
+
+.extend--dos{
+    @extend .extend--uno;
+    font-family: $pop;
+    border-radius: 8px;
+    color: $r;
+}
+.extend--tres{
+    @extend .extend--uno;
+    font-size: 25px;
+    color: $n;
+    border: 10px outset blueviolet;
+}
+
+@mixin xy ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.mixin{
+    @include xy (300px,120px);
+    background-color: azure;
+}
+
+/*solo para actividad sass II(me sirve que quede el commit asi puedo reverlo en cualquier momento)*/
 
 h1{
     font-family: $mon;
@@ -11,6 +55,7 @@ padding: 1% 0% 1% 30%;
 margin: 0% 0% 1% 0%;
 text-decoration: underline;
 }
+
 
 h2{
     color: $rosa;
@@ -27,6 +72,11 @@ h2{
 }
 
 
+form{
+    padding-bottom: 3%;
+}
+
+
 h3{
     font-family: $pop;
 }
@@ -38,9 +88,31 @@ p{
 }
 
 footer{
-    background-color: $madera;
-    padding: 1% 1% 5% 1%;
-}
+    background-color: rgb(35, 34, 34);
+    padding: 1% 1% 0% 1%;
+    .pie{
+        
+        @if $tipografia == violeta{
+            color: blueviolet;
+        }
+        @else if $tipografia == blanco{
+            color: white;
+        }
+        @else{
+            color: green;
+        }
+        }
+    }
+
+                .columnas{
+                        display: grid;
+                        grid-template-columns: 2fr 1fr;
+                }   
+   .derechos{
+    color: white;
+   }
+
+
 
 @media (min-width:300px){
 
@@ -70,6 +142,7 @@ footer{
        display: flex;
        flex-direction: column;
     padding-left: 15%;
+    padding-bottom: 2%;
 }
 
 }
@@ -101,6 +174,10 @@ h1{
     font-family: $mon;
     padding: 1% 0% 1% 40%;
     margin: 0% 0% 1% 0%;
+}
+
+.resumen{
+    width: 100%;
 }
 
 h3{
@@ -152,6 +229,10 @@ figcaption{
 }
 
 @media (min-width:992px){
+
+    .resumen{
+        width: 90%;
+    }
 
  h3{
     padding-left: 37%;
