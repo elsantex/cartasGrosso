@@ -2,7 +2,6 @@
   padding: 0%;
   margin: 0%;
   max-width: 100%;
-  overflow-x: none;
 }
 
 html {
@@ -18,43 +17,6 @@ body {
   background-image: url("../img/fondo.jpg");
 }
 
-/*solo para actividad sass II(me sirve que quede el commit asi puedo reverlo en cualquier momento)*/
-.btn--twitter {
-  background-color: #55acee;
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.btn--instagram {
-  background-color: #c25e30;
-}
-
-.extend--uno, .extend--tres, .extend--dos {
-  border: 5px inset crimson;
-  background-color: burlywood;
-}
-
-.extend--dos {
-  font-family: "Poppins", sans-serif;
-  border-radius: 8px;
-  color: red;
-}
-
-.extend--tres {
-  font-size: 25px;
-  color: black;
-  border: 10px outset blueviolet;
-}
-
-.mixin {
-  height: 120px;
-  width: 300px;
-  background-color: azure;
-}
-
-/*solo para actividad sass II(me sirve que quede el commit asi puedo reverlo en cualquier momento)*/
 h1 {
   font-family: "Montserrat", sans-serif;
   padding: 1% 0% 1% 30%;
@@ -63,7 +25,7 @@ h1 {
 }
 
 h2 {
-  color: rgb(187, 65, 187);
+  color: #4C1282;
   font-weight: bolder;
   font-size: 32px;
   padding: 1% 0% 0% 1%;
@@ -82,6 +44,12 @@ form {
 
 h3 {
   font-family: "Poppins", sans-serif;
+}
+
+.contacto {
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
 }
 
 p {
@@ -117,7 +85,7 @@ footer .pie {
     display: flex;
     font-size: 24px;
     padding: 0% 0% 4% 17%;
-    color: red;
+    color: #690C0C;
     text-decoration: underline;
   }
 

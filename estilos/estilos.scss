@@ -4,50 +4,7 @@
 
 
 
-/*solo para actividad sass II(me sirve que quede el commit asi puedo reverlo en cualquier momento)*/
 
-$redes: (
-        twitter: #55acee,
-        facebook: #3a5795,
-        instagram: #c25e30,
-
-);
-@each $red, $color in $redes {
-    .btn--#{$red}{
-        background-color: $color;
-    }
-    
-}
-
-.extend--uno{
-    border:5px inset crimson ;
-    background-color: $madera
-}
-
-.extend--dos{
-    @extend .extend--uno;
-    font-family: $pop;
-    border-radius: 8px;
-    color: $r;
-}
-.extend--tres{
-    @extend .extend--uno;
-    font-size: 25px;
-    color: $n;
-    border: 10px outset blueviolet;
-}
-
-@mixin xy ($width, $height) {
-    height: $height;
-    width: $width;
-}
-
-.mixin{
-    @include xy (300px,120px);
-    background-color: azure;
-}
-
-/*solo para actividad sass II(me sirve que quede el commit asi puedo reverlo en cualquier momento)*/
 
 h1{
     font-family: $mon;
@@ -58,7 +15,7 @@ text-decoration: underline;
 
 
 h2{
-    color: $rosa;
+    color: $violeta;
     font-weight: bolder;
     font-size: 32px;
     padding: 1% 0% 0% 1%;
@@ -79,8 +36,13 @@ form{
 
 h3{
     font-family: $pop;
+    
 }
-
+.contacto{
+          padding: 0%;
+        margin: 0%;
+        text-align: center;
+    }
 p{
     color: $n;
     padding: 1% 0% 1% 2%;
@@ -92,7 +54,7 @@ footer{
     padding: 1% 1% 0% 1%;
     .pie{
         
-        @if $tipografia == violeta{
+        @if $tipografia == violetita{
             color: blueviolet;
         }
         @else if $tipografia == blanco{
@@ -155,8 +117,9 @@ footer{
 
     h3{
         padding-left: 28%;
+       
     }
-
+ 
     .ordenar{
         flex-direction: row;
         padding-left: 0%;
@@ -182,8 +145,9 @@ h1{
 
 h3{
     padding: 0% 0% 0% 30%;
+   
 }
-
+ 
  .expas{
     width:27vw;
     margin: 1% 0% 0.5% 37%;
@@ -236,8 +200,9 @@ figcaption{
 
  h3{
     padding-left: 37%;
-  }
 
+  }
+   
     figcaption{
         padding: 45% 0% 0% 25%;
     }
